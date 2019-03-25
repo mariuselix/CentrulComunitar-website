@@ -1,17 +1,12 @@
 /* --------------------------
-:: Template Name: Colorlib App - App Landing Page
-:: Template Author: Colorlib
-:: Template Author URI: https://colorlib.com/
-:: Description: Colorlib is a One Page based App Landing Template. It's very clean, creative & beautiful. It's super     responsive & ultra light.
-:: Tags: Colorlib, App Landing, Apps, Responsive App Landing, Bootstrap 4, Free Theme, Free HTML Template, HTML5 Template etc.
-:: Version: v1.0
-:: Created: 11/03/2017
+:: Version: 2.4
+:: Created: 25/03/2019
 -------------------------- */
 
 /* --- [Master Stylesheet] ----
 :: 1.0 Base CSS Start
 :: 2.0 Header Area CSS
-:: 3.0 Wellcome Area CSS
+:: 3.0 welcome Area CSS
 :: 4.0 Special Area CSS
 :: 5.0 Features Area CSS
 :: 6.0 Video Area CSS
@@ -19,10 +14,11 @@
 :: 8.0 Screenshots Area CSS
 :: 9.0 Pricing Plan Area CSS
 :: 10.0 Testimonials Area CSS
-:: 11.0 CTA Area CSS Start
-:: 12.0 Team Area CSS Start
-:: 13.0 Contact Area CSS Start
-:: 14.0 Footer Area CSS Start
+:: 11.0 CTA Area CSS
+:: 12.0 Team Area CSS
+:: 13.0 Contact Area CSS
+:: 14.0 Footer Area CSS
+:: 15.0 Banner Area CSS
 -------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700');
@@ -419,10 +415,10 @@ p {
 
 
 /* --------------------------
-:: 3.0 Wellcome Area CSS
+:: 3.0 welcome Area CSS
 -------------------------- */
 
-.wellcome_area {
+.welcome_area {
     background-image: url(img/bg-img/welcome-bg.png);
     height: 900px;
     position: relative;
@@ -431,7 +427,7 @@ p {
     background-size: cover;
 }
 
-.wellcome_area:after {
+.welcome_area:after {
     position: absolute;
     width: 100%;
     left: 0;
@@ -455,12 +451,31 @@ p {
     width: 100%;
 }
 
-.wellcome-heading > h2 {
-    font-size: 100px;
+.welcome-heading > p {
+    color: #fff;
+}
+
+.welcome-heading > h2 {
+    font-size: 7em;
     color: #ffffff;
     font-weight: 700;
     position: relative;
     z-index: 3;
+}
+
+.welcome-heading > h3 {
+    font-size: 18em;
+    line-height: 1.5em;
+    position: absolute;
+    font-weight: 900;
+    z-index: -1;
+    color: #fff;
+    opacity: .1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .get-start-area .email {
@@ -517,26 +532,6 @@ p {
     color: #fff;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
-}
-
-.wellcome-heading > p {
-    color: #fff;
-}
-
-.wellcome-heading > h3 {
-    font-size: 12em;
-    position: absolute;
-    top: -134px;
-    font-weight: 900;
-    left: -12px;
-    z-index: -1;
-    color: #fff;
-    opacity: .1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
-}
-
-.wellcome-heading {
-    margin-bottom: 100px;
 }
 
 /* --------------------------
@@ -1273,4 +1268,15 @@ p {
 
 .copyright-text > p {
     margin-bottom: 0;
+}
+
+/* --------------------------
+:: 15.0 Banner Area CSS
+-------------------------- */
+.banner-mid .container{
+    max-width: 100% !important;
+}
+
+.banner-mid img {
+    width: 100%;
 }

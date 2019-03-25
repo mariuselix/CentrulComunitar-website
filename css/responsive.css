@@ -17,6 +17,13 @@
         bottom: -100px;
         right: 50px;
     }
+    .welcome-heading > h2 {
+        font-size: 6em;
+    }
+    .welcome-heading > h3 {
+        font-size: 14em;
+        line-height: 2em;
+    }
     .video-area {
         height: 550px;
     }
@@ -34,9 +41,6 @@
     }
     .menu_area .navbar-brand {
         font-size: 48px;
-    }
-    .header_area.sticky {
-        height: 50px;
     }
     .header_area .menu_area #nav .nav-link,
     .header_area.sticky .menu_area #nav .nav-link {
@@ -57,8 +61,12 @@
         bottom: -100px;
         right: 0;
     }
-    .wellcome-heading {
-        margin-bottom: 70px;
+    .welcome-heading > h2 {
+        font-size: 5em;
+    }
+    .welcome-heading > h3 {
+        font-size: 12em;
+        line-height: 2.5em;
     }
     .single-special {
         padding: 30px 10px;
@@ -71,9 +79,6 @@
     }
     .video-area {
         height: 350px;
-    }
-    .section-heading > h2 {
-        font-size: 38px;
     }
     .address-text > p,
     .phone-text > p,
@@ -117,9 +122,6 @@
     .menu_area .navbar-brand {
         font-size: 48px;
     }
-    .header_area.sticky {
-        height: 50px;
-    }
     .header_area .menu_area #nav .nav-link,
     .header_area.sticky .menu_area #nav .nav-link {
         padding: 5px 15px;
@@ -140,8 +142,12 @@
     .welcome_text .cd-intro > p {
         font-size: 14px;
     }
-    .wellcome-heading > h2 {
-        font-size: 48px;
+    .welcome-heading > h2 {
+        font-size: 2em;
+    }
+    .welcome-heading > h3 {
+        font-size: 6em;
+        line-height: 3em;
     }
     .get-start-area .email {
         margin-bottom: 20px;
@@ -209,15 +215,9 @@
         text-align: left;
         margin-top: 20px;
     }
-    .contact_from {
+    .contact_form {
         margin-top: 30px;
     }
-    .wellcome-heading > h3 {
-        font-size: 252px;
-        top: -105px;
-        left: -1px;
-    }
-    .wellcome-heading,
     .single-cool-fact {
         margin-bottom: 50px;
     }
@@ -227,21 +227,9 @@
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-    .wellcome-heading > h3 {
-        font-size: 284px;
-    }
-    .wellcome-heading > h2 {
-        font-size: 70px;
-    }
     .welcome-thumb {
         bottom: -109px;
         width: 75%;
-    }
-    .wellcome-heading {
-        margin-bottom: 50px;
-    }
-    .wellcome-heading > h3 {
-        top: -139px;
     }
     .get-start-area .email {
         max-width: 370px;
@@ -249,9 +237,6 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .wellcome-heading > h3 {
-        font-size: 286px;
-    }
     .get-start-area .email {
         margin-bottom: 0;
     }

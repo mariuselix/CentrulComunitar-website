@@ -26,12 +26,12 @@
     <link rel="icon" type="image/png" sizes="96x96" href="ico/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
     <link rel="manifest" href="ico/manifest.json">
-    <meta name="msapplication-TileColor" content="#fb397d">
+    <meta name="msapplication-TileColor" content="#5b32b4">
     <meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
-    <meta name="theme-color" content="#fb397d">
+    <meta name="theme-color" content="#5b32b4">
 
     <!-- Core Stylesheet -->
-    <link href="style.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
@@ -51,7 +51,7 @@
                 <!-- Menu Area Start -->
                 <div class="col-12 col-lg-12">
                     <div class="menu_area">
-                        <nav class="navbar navbar-expand-lg navbar-light">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
                             <!-- Logo -->
                             <a class="navbar-brand" href="#"><img src="img/main-img/Logo-centrul-comunitar-de-informare-si-consiliere-asociatia-sfantul-martin-arad.png" alt=""></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -73,14 +73,14 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <!-- ***** Wellcome Area Start ***** -->
-    <section class="wellcome_area clearfix" id="home">
+    <!-- ***** welcome Area Start ***** -->
+    <section class="welcome_area clearfix" id="home">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-md">
-                    <div class="wellcome-heading text-center">
+                    <div class="welcome-heading text-center">
                         <h2>Centrul comunitar de informare și consiliere</h2>
-                        <h3>Asoc. Sfântul Martin Arad</h3>
+                        <h3>Sfântul Martin</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
             <img src="img/bg-img/welcome-img.png" alt="">
         </div> -->
     </section>
-    <!-- ***** Wellcome Area End ***** -->
+    <!-- ***** welcome Area End ***** -->
 
     <!-- ***** Special Area Start ***** -->
     <section class="special-area bg-white section_padding_100" id="about">
@@ -143,13 +143,13 @@
         <div class="special_description_area mt-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                    <div class="col-lg-6 text-center">
                         <div class="special_description_content">
                             <h2>Scopul</h2>
                             <p>Centrul comunitar de informare și consiliere are scopul de a răspunde nevoilor scoaile, precum și a celor speciale, individuale, familiale sau de grup, în vederea depășirii situațiilor de dificultate, prevenirii și combaterii riscului de excluziune socială, promovării incluziunii sociale și creșterii calității vieții tuturor beneficiarilor Asociației Sfântul Martin.</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                    <div class="col-lg-6 text-center">
                         <div class="special_description_content">
                             <h2>Beneficiari</h2>
                             <p>Beneficiarii serviciilor sociale acordate de centrul comunitar de informare și consiliere sunt persoane/familii aflate în situație de dificultate sau în risc de excluziune socială de pe raza județului Arad, persoane cu dizabilități, persoane vârstnice, victime ale violenței în familie, persoane fără adăpost, persoane cu diferite adicții sau persoane cu afecțiuni psihice.</p>
@@ -486,10 +486,12 @@
     <!-- ***** Client Feedback Area End ***** -->
 
     <!-- ***** Banner Area Start ***** -->
-    <section class="banner-mid section_padding_0 clearfix">
+    <section class="banner-mid clearfix">
+        <div class="container">
             <div class="row align-items-center">
                 <img src="img/main-img/banner.jpeg" alt="">
             </div>
+        </div>
     </section>
     <!-- ***** Banner Area End ***** -->
 
@@ -520,7 +522,7 @@
                             </div>
                         </div>
                         <div class="member-text">
-                            <h4>Lidia Flutur</h4>
+                            <h4>Lidia Georgiu</h4>
                             <p>Coordonator centru</p>
                         </div>
                     </div>
@@ -609,8 +611,8 @@
                 </div>
                 <div class="col-md-6">
                     <!-- Form Start-->
-                    <div class="contact_from">
-                        <form action="#" method="post">
+                    <div class="contact_form">
+                        <form name="sentMessage" id="contactForm">
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div class="row">
@@ -636,6 +638,8 @@
                                     <div class="col-12">
                                         <button type="submit" class="btn submit-btn">Trimite</button>
                                     </div>
+                                    <!-- Form status empty div -->
+                                    <div id="success"></div>
                                 </div>
                             </div>
                             <!-- Message Input Area End -->
@@ -670,7 +674,9 @@
         <!-- Foooter Text-->
         <div class="copyright-text">
             <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
-            <p>Copyright ©2018 Crafted with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://scorpiusworks.com" target="_blank">ScorpiusWorks</a> based on template from <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            <p>Copyright ©2018 @ Asociația Sfântul Martin Arad</p>
+            <p>Crafted with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://scorpiusworks.com" target="_blank">ScorpiusWorks</a></p>
+            <p>based on template from <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
         </div>
     </footer>
     <!-- ***** Footer Area Start ***** -->
@@ -685,6 +691,10 @@
     <script src="js/plugins.js"></script>
     <!-- Slick Slider Js-->
     <script src="js/slick.min.js"></script>
+    <!-- Contact Me Js-->
+    <script src="js/contact_me.js"></script>
+    <!-- Bootstrap Validator Js-->
+    <script src="js/jqBootstrapValidation.min.js"></script>
     <!-- Footer Reveal JS -->
     <script src="js/footer-reveal.min.js"></script>
     <!-- Active JS -->
